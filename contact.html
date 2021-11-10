@@ -2,51 +2,67 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>L'agence - Espace personnel</title>
+    <title>L'agence - Contact</title>
     <meta name="keywords" content="Voyages, Grenoble, L'agence">
+    <link rel="stylesheet" type="text/css" href="assets/css/globalStyle.css">
 </head>
 <body>
-<h1>L'agence</h1>
-<hr>
-<nav>
-    <h2>Menu</h2>
-    <a href="index.html" title="Accueil">Accueil</a>
-    <a href="perso.html" title="Espace Perso">Espace Perso</a>
-    <a href="destinations.html" title="Destinations">Destinations</a>
-    <a href="vva.html" title="Voyage Virtuel audio">Voyage virtuel audio</a>
-    <a href="vvv.html" title="Voyage virtuel vidéo">Voyage virtuel vidéo</a>
-    <a href="contact.html" title="Contact">Contact</a>
-</nav>
-<hr>
-<section>
-    <h2>Contactez-nous !</h2>
-    <form action="" method="post">
-        <div class="form-group">
-            <label for="prenom"></label>
-            <input id="prenom" type="text" name="prenom" placeholder="Prénom" required>
-        </div>
-        <div class="form-group">
-            <label for="nom"></label>
-            <input id="nom" type="text" name="nom" placeholder="Nom" required>
-        </div>
-        <div class="form-group">
-            <label for="email"></label>
-            <input id="email" type="email" name="email" placeholder="Adresse E-mail">
-        </div>
-        <div class="form-group">
-            <label for="tel"></label>
-            <input id="tel" type="tel" name="tel" placeholder="Téléphone"><!-- Pas de pattern, globalement jamais utilisé en entreprise (verif JS / Back) -->
-        </div>
-        <div class="form-group">
-            <label for="message"></label>
-            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-        </div>
-        <div class="form-group">
-            <button class="btn btn-primary" type="submit">Envoyer</button>
-        </div>
+<header>
+    <h1>L'agence</h1>
+    <hr>
+    <nav>
+        <h2>Menu</h2>
+        <ul class="navList">
+            <li class="nav-item"><a href="index.html" title="Accueil">Accueil</a>                         </li>
+            <li class="nav-item details-info-wrapped"><a href="perso.html" title="Espace Perso">Espace Perso</a>
+                <ol class="accounts-details">
+                    <li class="details-info-item"><a href="connexion.html">Connexion</a></li>
+                    <li class="details-info-item"><a href="#">Mes informations</a>
+                    </li>
+                    <li class="details-info-item"><a href="messagerie.html">Messagerie</a></li>
+                    <li class="details-info-item"><a href="history.html">Historique</a></li>
+                </ol>
+            </li>
+            <li class="nav-item"><a href="destinations.html" title="Destinations">Destinations</a>        </li>
+            <li class="nav-item"><a href="vva.html" title="Voyage Virtuel audio">Voyage virtuel audio</a> </li>
+            <li class="nav-item"><a href="vvv.html" title="Voyage virtuel vidéo">Voyage virtuel vidéo</a> </li>
+            <li class="nav-item"><a href="contact.html" class="active" title="Contact">Contact</a>                       </li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+<main>
+    <section>
+        <h2>Contactez-nous !</h2>
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="prenom"></label>
+                <input id="prenom" type="text" name="prenom" placeholder="Prénom" required>
+            </div>
+            <div class="form-group">
+                <label for="nom"></label>
+                <input id="nom" type="text" name="nom" placeholder="Nom" required>
+            </div>
+            <div class="form-group">
+                <label for="email"></label>
+                <input id="email" type="email" name="email" placeholder="Adresse E-mail">
+            </div>
+            <div class="form-group">
+                <label for="tel"></label>
+                <input id="tel" type="tel" name="tel" placeholder="Téléphone"><!-- Pas de pattern, globalement jamais utilisé en entreprise (verif JS / Back) -->
+            </div>
+            <div class="form-group">
+                <label for="message"></label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">Envoyer</button>
+            </div>
 
 
-    </form>
-</section>
+        </form>
+    </section>
+</main>
+
 </body>
 </html>

@@ -4,57 +4,72 @@
     <meta charset="UTF-8">
     <title>L'agence - Voyages audios</title>
     <meta name="keywords" content="Voyages, Grenoble, L'agence">
+    <link rel="stylesheet" type="text/css" href="assets/css/globalStyle.css">
 </head>
 <body>
-<h1>L'agence</h1>
-<hr>
-<nav>
-    <h2>Menu</h2>
-    <a href="index.html" title="Accueil">Accueil</a>
-    <a href="perso.html" title="Espace Perso">Espace Perso</a>
-    <a href="destinations.html" title="Destinations">Destinations</a>
-    <a href="vva.html" title="Voyage Virtuel audio">Voyage virtuel audio</a>
-    <a href="vvv.html" title="Voyage virtuel vidéo">Voyage virtuel vidéo</a>
-    <a href="contact.html" title="Contact">Contact</a>
-</nav>
-<hr>
-<section>
-    <article>
-        <h2>Athénes</h2>
-        <figure>
-            <figcaption>La mer d'athènes:</figcaption>
-            <audio controls autoplay src="assets/sounds/sea.mp3">
-                Your browser does not support the audio element.
-            </audio>
-        </figure>
-    </article>
-    <article>
-        <h2>Budapest</h2>
-        <figure>
-            <figcaption>Le trafic de budapest:</figcaption>
-            <audio controls src="assets/sounds/city_traffic.mp3">
-                Your browser does not support the audio element.
-            </audio>
-        </figure>
-    </article>
-    <article>
-        <h2>Lisbonne</h2>
-        <figure>
-            <figcaption>La mer de lisbonne:</figcaption>
-            <audio controls src="assets/sounds/sea.mp3">
-                Your browser does not support the audio element.
-            </audio>
-        </figure>
-    </article>
-    <article>
-        <h2>Paris</h2>
-        <figure>
-            <figcaption>Le trafic de budapest:</figcaption>
-            <audio controls src="assets/sounds/city_traffic.mp3">
-                Your browser does not support the audio element.
-            </audio>
-        </figure>
-    </article>
-</section>
+<header>
+    <h1>L'agence</h1>
+    <hr>
+    <nav>
+        <h2>Menu</h2>
+        <ul class="navList">
+            <li class="nav-item"><a href="index.html" title="Accueil">Accueil</a>                         </li>
+            <li class="nav-item details-info-wrapped"><a href="perso.html" title="Espace Perso">Espace Perso</a>
+                <ol class="accounts-details">
+                    <li class="details-info-item"><a href="connexion.html">Connexion</a></li>
+                    <li class="details-info-item"><a href="#">Mes informations</a>
+                    </li>
+                    <li class="details-info-item"><a href="messagerie.html">Messagerie</a></li>
+                    <li class="details-info-item"><a href="history.html">Historique</a></li>
+                </ol>
+            </li>
+            <li class="nav-item"><a href="destinations.html" title="Destinations">Destinations</a>        </li>
+            <li class="nav-item"><a href="vva.html" class="active" title="Voyage Virtuel audio">Voyage virtuel audio</a> </li>
+            <li class="nav-item"><a href="vvv.html" title="Voyage virtuel vidéo">Voyage virtuel vidéo</a> </li>
+            <li class="nav-item"><a href="contact.html" title="Contact">Contact</a>                       </li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+<main>
+    <section>
+        <article>
+            <h2>Athénes</h2>
+            <figure>
+                <figcaption>La mer d'athènes:</figcaption>
+                <audio controls autoplay src="assets/sounds/sea.mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </figure>
+        </article>
+        <article>
+            <h2>Budapest</h2>
+            <figure>
+                <figcaption>Le trafic de budapest:</figcaption>
+                <audio controls src="assets/sounds/city_traffic.mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </figure>
+        </article>
+        <article>
+            <h2>Lisbonne</h2>
+            <figure>
+                <figcaption>La mer de lisbonne:</figcaption>
+                <audio controls src="assets/sounds/sea.mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </figure>
+        </article>
+        <article>
+            <h2>Paris</h2>
+            <figure>
+                <figcaption>Le trafic de paris la street:</figcaption>
+                <audio controls src="assets/sounds/city_traffic.mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </figure>
+        </article>
+    </section>
+</main>
 </body>
 </html>
