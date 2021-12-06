@@ -111,6 +111,7 @@ article p:last-child{
 
 .destinations{
     border:1px solid black;
+    min-width: 70vw;
 }
 .destinations, .destinations th, .destinations td{
     border: 1px solid black;
