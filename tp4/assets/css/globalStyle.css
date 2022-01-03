@@ -1,0 +1,152 @@
+:root{
+    --main-bg-color: #e0e0e0;
+}
+
+body{
+    background-color: var(--main-bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin: 0 auto auto;
+}
+
+h1{
+    font-size: 3em;
+}
+
+header h1{
+    margin-top:0;
+    text-align: center;
+}
+
+h2{
+    font-size: 2em;
+}
+
+blockquote, h2, figcaption{
+    font-style: italic;
+}
+
+nav{
+    width: 80%;
+    margin: auto;
+}
+
+nav ul, .details-info{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-between;
+    padding:0;
+    margin-bottom: 20px;
+}
+
+nav ul li a, .details-info-item a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;
+}
+
+.details-info-item{
+    margin-bottom: 10px;
+}
+
+nav ul li a:hover, .details-info-item a:hover, nav ul li .active{
+    color:darkred;
+    border-bottom: 2px solid darkred;
+}
+
+nav ul li a:active{
+    background-color: lightblue;
+}
+
+q{
+    text-decoration: underline;
+}
+
+strong, em{
+    color: darkred;
+}
+
+article p:last-child{
+    margin-bottom: 20px;
+}
+
+.details-info{
+    width: 90%!important;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.accounts-details{
+    display: none;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    margin:10px;
+}
+
+.details-info-wrapped:hover{
+    border: 1px solid darkred;
+    border-radius: 10px;
+}
+
+.details-info-wrapped:hover > .accounts-details{
+    display: block;
+}
+
+.destinations{
+    border:1px solid black;
+    min-width: 70vw;
+}
+.destinations, .destinations th, .destinations td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.destinations td img{
+    width: 200px;
+}
+
+.destinations thead{
+    background-color: lightblue;
+}
+
+.destinations tbody tr:nth-child(odd){
+    background-color: darkgray;
+}
+
+.destinations tbody tr:nth-child(even){
+    background-color: lightgray;
+}
+
+.destinations tbody tr:hover{
+    background-color: gray;
+}
+
+input[required], textarea[required]{
+    border: 2px dashed red;
+}
+
+input{
+    margin-bottom: 5px;
+}
+
+figcaption{
+    text-transform: capitalize;
+}

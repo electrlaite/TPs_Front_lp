@@ -1,0 +1,53 @@
+<header>
+    <h1>L'agence</h1>
+    <hr>
+    <nav>
+        <h2>Menu</h2>
+        <ul class="navList">
+            <li class="nav-item"><a href="index.html" title="Accueil">Accueil</a>                         </li>
+            <li class="nav-item details-info-wrapped"><a href="perso.html" class="active" title="Espace Perso">Espace Perso</a>
+                <ol class="accounts-details">
+                    <li class="details-info-item"><a data-bs-toggle="modal" data-bs-target="#loginModal">Connexion</a></li>
+                    <li class="details-info-item"><a href="#">Mes informations</a>
+                    </li>
+                    <li class="details-info-item"><a href="messagerie.html">Messagerie</a></li>
+                    <li class="details-info-item"><a href="history.html">Historique</a></li>
+                </ol>
+            </li>
+            <li class="nav-item"><a href="destinations.html" title="Destinations">Destinations</a>        </li>
+            <li class="nav-item"><a href="vva.html" title="Voyage Virtuel audio">Voyage virtuel audio</a> </li>
+            <li class="nav-item"><a href="vvv.html" title="Voyage virtuel vidéo">Voyage virtuel vidéo</a> </li>
+            <li class="nav-item"><a href="contact.html" title="Contact">Contact</a>                       </li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+<!-- Modal login-->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form id="loginForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="login" id="login" placeholder="Username">
+                            <label for="login">Username</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
